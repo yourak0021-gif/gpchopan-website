@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Government Polytechnic Chopan, Sonbhadra - Approved by AICTE, affiliated with BTEUP Lucknow. Premier Government Technical Institute.">
-  <title>Government Polytechnic Chopan, Sonbhadra | Technical Education UP</title>
+  <meta name="description" content="About Government Polytechnic Chopan, Sonbhadra - History, Affiliation, Programs & Institutional Committees.">
+  <title>About Us | Government Polytechnic Chopan, Sonbhadra</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="images/1.png">
 </head>
@@ -49,7 +49,7 @@
       
       <ul class="nav-links" id="navLinks">
         <li class="nav-item">
-          <a href="index.html" class="nav-link ">🏠 Home</a>
+          <a href="index.html" class="nav-link">🏠 Home</a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link active">📖 About Us</a>
@@ -57,7 +57,7 @@
         
         <!-- Departments Dropdown -->
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link ">🎓 Departments ▾</a>
+          <a href="#" class="nav-link">🎓 Departments ▾</a>
           <ul class="dropdown-menu">
             <li><a href="computerScience.html" class="dropdown-link">💻 Computer Science & Engg.</a></li>
             <li><a href="electronics.html" class="dropdown-link">⚡ Electronics Engineering</a></li>
@@ -68,7 +68,7 @@
 
         <!-- Facilities Dropdown -->
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link ">🏢 Facilities ▾</a>
+          <a href="#" class="nav-link">🏢 Facilities ▾</a>
           <ul class="dropdown-menu">
             <li><a href="library.html" class="dropdown-link">📚 Central Library</a></li>
             <li><a href="workshops.html" class="dropdown-link">⚙️ Central Workshops</a></li>
@@ -77,10 +77,10 @@
         </li>
 
         <li class="nav-item">
-          <a href="contact.html" class="nav-link ">📍 Contact</a>
+          <a href="contact.html" class="nav-link">📍 Contact</a>
         </li>
         <li class="nav-item">
-          <a href="developers.html" class="nav-link ">💻 Developers</a>
+          <a href="developers.html" class="nav-link">💻 Developers</a>
         </li>
       </ul>
     </nav>
@@ -148,25 +148,196 @@
         </div>
       </div>
 
-      <!-- Institutional Committees -->
-      <div class="section-title-wrap">
+      <!-- Institutional Committees (Interactive) -->
+      <div class="section-title-wrap" style="margin-top: 4rem;">
         <h2 class="section-title">Institutional Committees & Cells</h2>
-        <p class="section-subtitle">Governance cells maintaining student welfare, safety, and academic quality</p>
+        <p class="section-subtitle">Click on any committee below to view its objectives, guidelines, and welfare measures</p>
       </div>
 
       <div class="committee-grid">
-        <a href="#" class="committee-btn">⚖️ SC/ST Committee</a>
-        <a href="#" class="committee-btn">🧑‍🏫 Student Counsellor</a>
-        <a href="#" class="committee-btn">🤝 Institution Industry Cell</a>
-        <a href="#" class="committee-btn">💼 Training And Placement</a>
-        <a href="#" class="committee-btn">🌟 Internal Quality Assurance Cell (IQAC)</a>
-        <a href="#" class="committee-btn">🛡️ Internal Complaint Committee</a>
-        <a href="#" class="committee-btn">🚫 Anti-Ragging Committee</a>
+        <button class="committee-btn" data-modal-target="modal-scst">⚖️ SC/ST Committee</button>
+        <button class="committee-btn" data-modal-target="modal-counsellor">🧑‍🏫 Student Counsellor</button>
+        <button class="committee-btn" data-modal-target="modal-iic">🤝 Institution Industry Cell</button>
+        <button class="committee-btn" data-modal-target="modal-placement">💼 Training And Placement</button>
+        <button class="committee-btn" data-modal-target="modal-iqac">🌟 Internal Quality Assurance Cell (IQAC)</button>
+        <button class="committee-btn" data-modal-target="modal-icc">🛡️ Internal Complaint Committee</button>
+        <button class="committee-btn" data-modal-target="modal-antiragging">🚫 Anti-Ragging Committee</button>
       </div>
 
     </div>
   </section>
 </main>
+
+<!-- ==================== MODALS FOR COMMITTEES ==================== -->
+
+<!-- 1. SC/ST Committee Modal -->
+<div class="modal-backdrop" id="modal-scst">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>⚖️ SC/ST Committee</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>The <strong>SC/ST Committee</strong> at Government Polytechnic Chopan ensures the effective implementation of policies and welfare programs for students and staff belonging to Scheduled Castes and Scheduled Tribes.</p>
+      
+      <h4>Key Objectives:</h4>
+      <ul>
+        <li>To prevent discrimination and maintain an inclusive, supportive academic environment.</li>
+        <li>To facilitate scholarship assistance and government financial welfare schemes.</li>
+        <li>To address grievances and provide guidance on academic and administrative matters.</li>
+        <li>Book Bank support and specialized learning resources through the central library.</li>
+      </ul>
+      <p><em>For assistance, students can reach out to the committee coordinator at the administrative office.</em></p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Student Counsellor Modal -->
+<div class="modal-backdrop" id="modal-counsellor">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>🧑‍🏫 Student Counsellor Cell</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>The <strong>Student Counsellor Cell</strong> provides personalized mentoring, psychological support, and academic guidance to help students navigate their diploma education and career aspirations.</p>
+      
+      <h4>Services Offered:</h4>
+      <ul>
+        <li><strong>Academic Counselling:</strong> Guidance on subject difficulties, study routines, and exam preparation.</li>
+        <li><strong>Career Mentorship:</strong> Advice on diploma specialization, B.Tech lateral entry, and industry jobs.</li>
+        <li><strong>Stress Management:</strong> Confidential support for personal, emotional, or transitional challenges.</li>
+        <li><strong>Peer Mentoring:</strong> Fostering healthy collaboration between senior and junior batches.</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. Institution Industry Cell (IIC) Modal -->
+<div class="modal-backdrop" id="modal-iic">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>🤝 Institution Industry Cell (IIC)</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>The <strong>Institution Industry Cell</strong> bridges the gap between classroom academics and industrial practice by creating active partnerships with industrial manufacturing and IT enterprises.</p>
+      
+      <h4>Activities & Initiatives:</h4>
+      <ul>
+        <li>Organizing industrial visits to automotive plants, IT hubs, and electronics manufacturing facilities.</li>
+        <li>Facilitating mandatory summer training and internship programs for 2nd and 3rd year students.</li>
+        <li>Inviting corporate guest speakers and technical experts for modern technology workshops.</li>
+        <li>Fostering MoUs for student apprenticeships under NATS / Apprenticeship India.</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Training and Placement Cell Modal -->
+<div class="modal-backdrop" id="modal-placement">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>💼 Training And Placement Cell</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>The <strong>Training and Placement Cell (T&P)</strong> is dedicated to facilitating employment opportunities and career readiness for graduating diploma students across all engineering branches.</p>
+      
+      <h4>Placement Assistance:</h4>
+      <ul>
+        <li>Conducting on-campus and pooled recruitment drives with leading companies.</li>
+        <li>Resume building, mock interviews, and group discussion preparation sessions.</li>
+        <li>Technical test prep and soft skills grooming in the communication lab.</li>
+        <li>Apprenticeship registrations and industry onboarding support.</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. IQAC Modal -->
+<div class="modal-backdrop" id="modal-iqac">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>🌟 Internal Quality Assurance Cell (IQAC)</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>The <strong>Internal Quality Assurance Cell (IQAC)</strong> continuously monitors, evaluates, and improves academic and administrative benchmarks across Government Polytechnic Chopan.</p>
+      
+      <h4>Core Responsibilities:</h4>
+      <ul>
+        <li>Curriculum delivery audit and continuous review of laboratory experiments.</li>
+        <li>Collecting student feedback and faculty appraisal for teaching excellence.</li>
+        <li>Encouraging innovative pedagogical tools, digital boards, and smart classrooms.</li>
+        <li>Compliance with AICTE, BTEUP, and state technical education quality standards.</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- 6. Internal Complaint Committee Modal -->
+<div class="modal-backdrop" id="modal-icc">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>🛡️ Internal Complaint Committee (ICC)</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>The <strong>Internal Complaint Committee (ICC)</strong> functions under statutory guidelines (POSH Act) to ensure a safe, secure, and respectful working and learning environment for all female students and staff members.</p>
+      
+      <h4>Key Functions:</h4>
+      <ul>
+        <li>Zero-tolerance policy towards harassment of any kind.</li>
+        <li>Confidential, impartial, and prompt grievance resolution mechanism.</li>
+        <li>Conducting gender sensitization workshops and awareness programs.</li>
+        <li>Direct online grievance submission via the official feedback portal.</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Anti-Ragging Committee Modal -->
+<div class="modal-backdrop" id="modal-antiragging">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3>🚫 Anti-Ragging Committee</h3>
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>Government Polytechnic Chopan strictly enforces a <strong>Zero Tolerance Policy</strong> against ragging in accordance with Supreme Court and AICTE regulations.</p>
+      
+      <h4>Anti-Ragging Regulations:</h4>
+      <ul>
+        <li>Ragging in any form (physical, verbal, or mental) is strictly prohibited on campus and hostels.</li>
+        <li>Mandatory submission of Anti-Ragging undertakings/affidavits at the time of admission.</li>
+        <li>24x7 Anti-Ragging flying squads conducting surprise visits in hostel premises.</li>
+        <li>National Anti-Ragging Helpline (Toll-Free): <strong>1800-180-5522</strong>.</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary-close">Close</button>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="main-footer">
