@@ -80,44 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoSlide();
   }
 
-  // Committee Modal Handlers
-  const committeeButtons = document.querySelectorAll('[data-modal-target]');
-  const closeButtons = document.querySelectorAll('.modal-close-btn, .btn-primary-close, .modal-backdrop');
-
-  committeeButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = btn.getAttribute('data-modal-target');
-      const targetModal = document.getElementById(targetId);
-      if (targetModal) {
-        targetModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
-
-  closeButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      if (e.target === btn || btn.classList.contains('modal-close-btn') || btn.classList.contains('btn-primary-close')) {
-        e.preventDefault();
-        const activeModal = btn.closest('.modal-backdrop');
-        if (activeModal) {
-          activeModal.classList.remove('active');
-          document.body.style.overflow = '';
-        }
-      }
-    });
-  });
-
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const activeModal = document.querySelector('.modal-backdrop.active');
-      if (activeModal) {
-        activeModal.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    }
-  });
-
+  
 });
